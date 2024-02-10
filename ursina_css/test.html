@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script src="brython.js"></script>
+    <script src="brython_stdlib.js"></script>
+</head>
+<body onload="brython()">
+    <h1>Hello, Brython!</h1>
+    <script type="text/python">
+        from browser import document, alert
+
+        def greet(event):
+            name = document["name"].value
+            alert(f"Hello, {name}!")
+
+        document["button"].bind("click", greet)
+    </script>
+    <input id="name" type="text" placeholder="Enter your name">
+    <button id="button">Greet</button>
+</body>
+</html>
