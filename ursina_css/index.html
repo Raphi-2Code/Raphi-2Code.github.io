@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Minicraft 2D - made with the Ursina Game Engine ʕ •ᴥ•ʔゝ□</title>
     <!-- <script src="ursina/three.min.js"></script> -->
-    <script src="Brython-3.8.9/brython.js" type="text/python">from ursina import *
+    <script src="Brython-3.8.9/brython.js" type="text/python">
+from ursina import *
 from controller import * # ursina's PlatformerController
 
 app = Ursina()
@@ -70,7 +71,8 @@ def input(key):
         player.y+=0.15/20
     if key=="s" or key=="s hold":
         player.y-=0.15/20
-app.run()</script>
+app.run()
+</script>
     <script src="Brython-3.8.9/brython_stdlib.js"></script>
     <script>
     window.onload = function() {
